@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div id="wheather">
+        <h1> Weather Station App</h1>
+        <p>
+            <span class="city">City /</span> <span class="country">Country</span>
+        </p>
+        <p>
+            <span class="temp">temperature </span><span class="temp-symbol"></span>
+        </p>
+        <p>
+            <span class="condition"></span>
+        </p>
+        <div class="wheather-icon ">
+            <i class="wi wi-wu-unknown"></i>
+        </div>
+    </div>
+
+    <div class="option">
+        <select id="wheatherSelect">
+            <option value="disable">Choose city</option>
+        </select>
+
+    </div>
+</div>
+
+
+<script src="js/cityID.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

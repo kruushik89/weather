@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+@keyframes shake {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes move {
+    from {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    to {
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+}
+
+body {
+    background: rgba(0, 0, 0, 0) url("http://jjdriving.com/wp-content/uploads/running_background-2.jpg") no-repeat scroll center center / cover ;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 1.5px 1.5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#wheather {
+    background: rgba(34, 34, 34, 0.6 );
+    width: 600px;
+    margin: 0 auto 40px;
+    border-radius: 0 0 10% 10%;
+    border: 1px solid #444;
+    box-shadow: 3px 3px 5px #000;
+    text-align: center;
+    font-size: 34px;
+}
+
+#wheather p {
+    padding-bottom: 5px;
+}
+
+h1 {
+    margin: 50px 10px 40px;
+    display: inline-block;
+    font-size: 46px;
+}
+
+.wheather-icon i {
+    margin: 20px 0;
+    font-size: 70px;
+    /*animation: move 4s alternate infinite;*/
+}
+
+.wind-direction-icon {
+    font-size: 100px;
+
+}
+.wind-direction-icon:before {
+    content: ""
+}
+
+.temp-symbol {
+    cursor: pointer;
+    color: red;
+}
+.temp-symbol:hover {
+    cursor: pointer;
+    color: #FFA100;
+}
+
+.otto {
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
